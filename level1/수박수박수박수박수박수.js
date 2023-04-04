@@ -16,3 +16,10 @@ function solution(n) {
 }
 
 console.log(solution(3));
+
+/* function solution(n) {
+  let answer = '';
+  if (n % 2) answer = '수' + '박수'.repeat(Math.floor(n / 2));
+  else answer = '수박'.repeat(n / 2);
+  return answer;
+} */
