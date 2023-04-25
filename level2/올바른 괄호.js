@@ -57,3 +57,24 @@ function solution(s) {
 
   return count === 0 ? true : false;
 }
+
+// 23-04-26 ============================> 스택 개념 문제로 생각해야 한다..!
+
+function solution(s) {
+  // 스택을 활용하기 위해 배열을 생성하고
+  const stack = [];
+
+  for (let c of s) {
+    if (c === "(") {
+      stack.push(c);
+      // 스택 비어있을 때 예외 처리가 필요함
+    } else {
+      if (stack.length == 0) {
+        return false;
+      }
+      stack.pop();
+    }
+  }
+
+  return stack.length === 0;
+}
