@@ -16,4 +16,17 @@ function solution(emergency) {
   let sorted = emergency.slice().sort((a, b) => b - a);
 
   return emergency.map((el) => sorted.indexOf(el) + 1);
+
+  /*
+  let arr = [...emergency].sort((a,b) => b-a);
+  let answer = [];
+  
+
+  for(let i=0; i< arr.length; i++){
+      answer.push(arr.indexOf(emergency[i])+1)
+  }
+  
+  return answer;
+
+  */
 }
