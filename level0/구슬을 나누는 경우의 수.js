@@ -30,3 +30,22 @@ function solution(balls, share) {
 
  이 문제를 Math.round()로 해결 가능하다.
 */
+
+/*
+
+>> ?????
+
+
+  let first = 1;
+    let second = balls - share; 
+    let third = 1;
+
+    for(let i = 1; balls >= i; i++) {
+        first = first * i; // n!
+        if(second > i) second = second * i // 6-1 -> 54321=120
+        if(share >= i) third = third * i
+    }
+
+    return first / (second * third);
+
+*/
