@@ -15,3 +15,8 @@ function solution(array) {
   answer.push(org.indexOf(arr[0]));
   return answer;
 }
+
+// function solution(array) {
+//     let max = Math.max(...array);
+//     return [max, array.indexOf(max)];
+// }
